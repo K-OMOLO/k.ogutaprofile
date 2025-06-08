@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kevin Oguta - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Basic styling for tabs */
+    .header-content {
+  display: flex;
+  align-items: center;  /* vertically centers image and h1 */
+  justify-content: center; /* horizontally center the group */
+  gap: 15px; /* space between image and text */
+  padding: 20px 0;
+}
+
+.header-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .tabs button {
+      background: none;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .tabs button.active {
+      border-bottom: 3px solid #000;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    section#hero {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .download-cv {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1e293b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #334155;
+}
+#services ul {
+  list-style: none;
+  padding: 0;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e2e8f0;
+}
+
+.accordion-body {
+  display: none;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-left: 3px solid #1e90ff;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Kevin Oguta.jpg" alt="Kevin Oguta" class="header-photo">
+    <h1>Kevin Oguta</h1>
+  </header>
+
+ <section id="hero" style="text-align: center; margin-top: 20px;">
+  <marquee behavior="scroll" direction="left" scrollamount="6" style="font-size: 2em; color: #333;">
+    Software Developer
+  </marquee>
+</section>
+
+  <!-- Tabs Navigation -->
+  <div class="tabs">
+    <button class="tab-link active" data-tab="about">About</button>
+    <button class="tab-link" data-tab="services">Services</button>
+    <button class="tab-link" data-tab="resume">Resume</button>
+    <button class="tab-link" data-tab="projects">Projects</button>
+    <button class="tab-link" data-tab="contact">Contact</button>
+  </div>
+
+  <!-- Tab Content Sections -->
+  <div id="about" class="tab-content active">
+    <h2>About Me</h2>
+    <p>Software quality assurance engineer and a software development engineer in test(SDET) with 3 years 
+of experience in software development, software testing, automation and performance testing .I have 
+strong background in creating comprehensive test plans, test cases, and executing end-to-end testing
+to ensure the quality and functionality of applications. Proficiency in identifying and tracking defects 
+with tools like JIRA and Trello to improve user experience and product functionality. I have the ability 
+to enhance testing processes and drive continuous improvement in software development lifecycle. 
+Competent in HTML/CSS, PHP, Python, Java, and frameworks like Django and React. Adept at creating 
+front-end and back-end development solutions that are scalable, effective, and easy to use. Excellent 
+problem-solving abilities and a firm grasp of agile approaches and the software development life cycle 
+(SDLC).</p>
+  </div>
+<div id="services" class="tab-content">
+  <h2>Services</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-header">Web Application Development</button>
+      <div class="accordion-body">
+        I build responsive and dynamic web applications using modern frameworks like React, Angular, and Vue for the frontend, and Node.js, Django, or Spring Boot for the backend.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Mobile App Development</button>
+      <div class="accordion-body">
+        I develop cross-platform and native mobile apps for Android and iOS using Flutter, React Native, and Kotlin, ensuring smooth user experiences and performance optimization.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">API Design & Integration</button>
+      <div class="accordion-body">
+        I design and implement RESTful and GraphQL APIs with secure endpoints, scalable architecture, and clean documentation using tools like Swagger and Postman.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Cloud Deployment & DevOps</button>
+      <div class="accordion-body">
+        I deploy applications to cloud platforms like AWS, Azure, and Google Cloud, and implement CI/CD pipelines with GitHub Actions, Jenkins, or GitLab CI to automate deployment.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Software Testing & QA</button>
+      <div class="accordion-body">
+        I conduct unit, integration, and end-to-end testing using tools like JUnit, Selenium, and Cypress to ensure software quality and reduce production bugs.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Database Design & Optimization</button>
+      <div class="accordion-body">
+        I design scalable database schemas for both SQL (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis) databases, and optimize queries for performance and reliability.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Containerization & Microservices</button>
+      <div class="accordion-body">
+        I package applications using Docker and manage microservices using Kubernetes or OpenShift for scalability, fault tolerance, and simplified deployment.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Bug Fixes & Maintenance</button>
+      <div class="accordion-body">
+        I provide ongoing support, bug resolution, and technical improvements to keep applications secure, fast, and compatible with modern systems.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Code Reviews & Security Audits</button>
+      <div class="accordion-body">
+        I offer detailed code reviews and security assessments to ensure code quality, prevent vulnerabilities, and follow industry best practices.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Technical Consulting & Mentorship</button>
+      <div class="accordion-body">
+        I advise clients on software architecture, technology stack selection, and also mentor junior developers to improve code skills and team productivity.
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <div id="resume" class="tab-content">
+    <h2>Resume</h2>
+    <a href="OGUTA KEVIN RESUME.pdf" download class="download-cv">Click to Download My Resume</a>
+  </div>
+
+  <div id="projects" class="tab-content">
+    <h2>Projects</h2>
+    <p>Project details and links go here.</p>
+  </div>
+
+  <div id="contact" class="tab-content">
+  <h2>Contact</h2>
+  <p>
+    Email: <a href="mailto:omolokevin96@gmail.com">omolokevin96@gmail.com</a><br>
+    Phone: <a href="tel:+254743345418">+254743345418</a><br>
+    WhatsApp: <a href="https://wa.me/254743345418" target="_blank">Chat on WhatsApp</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/kevin-oguta-22261534b/" target="_blank">View LinkedIn Profile</a>
+  </p>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Kevin Oguta</p>
+  </footer>
+
+  <script>
+     const headers = document.querySelectorAll(".accordion-header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const body = header.nextElementSibling;
+      body.style.display = body.style.display === "block" ? "none" : "block";
+    });
+  });
+    // JavaScript for tab switching
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(button => {
+      button.addEventListener('click', () => {
+        const tabId = button.getAttribute('data-tab');
+
+        // Remove 'active' from all buttons and contents
+        tabLinks.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // Add 'active' to the clicked tab and its content
+        button.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
